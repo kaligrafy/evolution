@@ -15,7 +15,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'error',
                 errorCode: 'INTERVIEW_001',
-                message: 'Interview validation error',
                 objectType: 'interview',
                 objectUuid: 'interview-uuid-123'
             },
@@ -23,7 +22,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'warning',
                 errorCode: 'HOME_001',
-                message: 'Home validation warning',
                 objectType: 'home',
                 objectUuid: 'home-uuid-456'
             },
@@ -31,7 +29,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'error',
                 errorCode: 'HOUSEHOLD_001',
-                message: 'Household validation error',
                 objectType: 'household',
                 objectUuid: 'household-uuid-789'
             },
@@ -39,7 +36,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'info',
                 errorCode: 'PERSON_001',
-                message: 'Person validation info',
                 objectType: 'person',
                 objectUuid: 'person-uuid-111'
             },
@@ -47,7 +43,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'error',
                 errorCode: 'PERSON_002',
-                message: 'Another person validation error',
                 objectType: 'person',
                 objectUuid: 'person-uuid-222'
             },
@@ -55,7 +50,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'warning',
                 errorCode: 'PERSON_003',
-                message: 'Same person different error',
                 objectType: 'person',
                 objectUuid: 'person-uuid-111'
             },
@@ -63,7 +57,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'error',
                 errorCode: 'JOURNEY_001',
-                message: 'Journey validation error',
                 objectType: 'journey',
                 objectUuid: 'journey-uuid-333'
             },
@@ -71,7 +64,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'warning',
                 errorCode: 'VISITED_PLACE_001',
-                message: 'Visited place validation warning',
                 objectType: 'visitedPlace',
                 objectUuid: 'visited-place-uuid-444'
             },
@@ -79,7 +71,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'error',
                 errorCode: 'TRIP_001',
-                message: 'Trip validation error',
                 objectType: 'trip',
                 objectUuid: 'trip-uuid-555'
             },
@@ -87,7 +78,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'info',
                 errorCode: 'SEGMENT_001',
-                message: 'Segment validation info',
                 objectType: 'segment',
                 objectUuid: 'segment-uuid-666'
             }
@@ -114,7 +104,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'error',
                 errorCode: 'INTERVIEW_001',
-                message: 'Interview validation error',
                 objectType: 'interview',
                 objectUuid: 'interview-uuid-123'
             });
@@ -128,7 +117,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'error',
                 errorCode: 'HOUSEHOLD_001',
-                message: 'Household validation error',
                 objectType: 'household',
                 objectUuid: 'household-uuid-789'
             });
@@ -142,7 +130,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'warning',
                 errorCode: 'HOME_001',
-                message: 'Home validation warning',
                 objectType: 'home',
                 objectUuid: 'home-uuid-456'
             });
@@ -160,7 +147,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'info',
                 errorCode: 'PERSON_001',
-                message: 'Person validation info',
                 objectType: 'person',
                 objectUuid: 'person-uuid-111'
             });
@@ -168,7 +154,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'warning',
                 errorCode: 'PERSON_003',
-                message: 'Same person different error',
                 objectType: 'person',
                 objectUuid: 'person-uuid-111'
             });
@@ -178,7 +163,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'error',
                 errorCode: 'PERSON_002',
-                message: 'Another person validation error',
                 objectType: 'person',
                 objectUuid: 'person-uuid-222'
             });
@@ -193,7 +177,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'error',
                 errorCode: 'JOURNEY_001',
-                message: 'Journey validation error',
                 objectType: 'journey',
                 objectUuid: 'journey-uuid-333'
             });
@@ -208,7 +191,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'warning',
                 errorCode: 'VISITED_PLACE_001',
-                message: 'Visited place validation warning',
                 objectType: 'visitedPlace',
                 objectUuid: 'visited-place-uuid-444'
             });
@@ -223,7 +205,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'error',
                 errorCode: 'TRIP_001',
-                message: 'Trip validation error',
                 objectType: 'trip',
                 objectUuid: 'trip-uuid-555'
             });
@@ -238,7 +219,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'info',
                 errorCode: 'SEGMENT_001',
-                message: 'Segment validation info',
                 objectType: 'segment',
                 objectUuid: 'segment-uuid-666'
             });
@@ -265,7 +245,6 @@ describe('AuditUtils', () => {
                     version: 1,
                     level: 'error',
                     errorCode: 'UNKNOWN_001',
-                    message: 'Unknown object type',
                     objectType: 'unknownType',
                     objectUuid: 'unknown-uuid-123'
                 }
@@ -298,7 +277,6 @@ describe('AuditUtils', () => {
                     version: 2,
                     level: 'info',
                     errorCode: 'FULL_001',
-                    message: 'Full audit with all properties',
                     ignore: true,
                     objectType: 'person',
                     objectUuid: 'person-uuid-full'
@@ -320,7 +298,6 @@ describe('AuditUtils', () => {
                 version: 2,
                 level: 'info',
                 errorCode: 'FULL_001',
-                message: 'Full audit with all properties',
                 ignore: true,
                 objectType: 'person',
                 objectUuid: 'person-uuid-full'
@@ -332,7 +309,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'error',
                 errorCode: 'INTEGRITY_001',
-                message: 'Integrity test',
                 ignore: false,
                 objectType: 'person',
                 objectUuid: 'person-uuid-integrity'
@@ -353,7 +329,6 @@ describe('AuditUtils', () => {
                     version: 1,
                     level: 'error',
                     errorCode: 'TEST_001',
-                    message: 'Test audit',
                     objectType: 'interview',
                     objectUuid: 'interview-uuid-test'
                 }
@@ -367,7 +342,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'error',
                 errorCode: 'TEST_001',
-                message: 'Test audit',
                 ignore: undefined
             });
         });
@@ -378,7 +352,6 @@ describe('AuditUtils', () => {
                     version: 1,
                     level: 'error' as const,
                     errorCode: 'TEST_001',
-                    message: 'Test audit'
                 }
             };
 
@@ -393,7 +366,6 @@ describe('AuditUtils', () => {
                 version: 1,
                 level: 'error',
                 errorCode: 'TEST_001',
-                message: 'Test audit',
                 objectType: 'interview',
                 objectUuid: 'interview-uuid-test'
             });

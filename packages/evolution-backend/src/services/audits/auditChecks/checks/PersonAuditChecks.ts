@@ -25,7 +25,6 @@ export const personAuditChecks: { [errorCode: string]: PersonAuditCheckFunction 
                 errorCode: 'P_M_Age',
                 version: 1,
                 level: 'error',
-                message: 'Person age is missing',
                 ignore: false
             };
         }

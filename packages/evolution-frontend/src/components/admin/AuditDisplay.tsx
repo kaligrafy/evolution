@@ -9,6 +9,7 @@ import { useTranslation } from 'react-i18next';
 import { faTriangleExclamation, faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { AuditForObject } from 'evolution-common/lib/services/audits/types';
+import { getAuditTranslationParams } from 'evolution-common/lib/services/audits/auditCheckTranslatableMessages';
 
 export interface AuditDisplayProps {
     audits?: AuditForObject[];
@@ -29,6 +30,7 @@ const AuditDisplay = ({
     for (let i = 0, countI = items.length; i < countI; i++) {
         const audit = items[i];
         if (audit.ignore !== true && (!hideInfoAudits || (hideInfoAudits && audit.level !== 'info'))) {
+            const params = getAuditTranslationParams(audit.errorCode);
             auditMessages.push(
                 <p
                     key={`${audit.level || 'error'}_${audit.errorCode}_${i + 1}`}
@@ -38,7 +40,7 @@ const AuditDisplay = ({
                         icon={audit.level === 'info' ? faCircleInfo : faTriangleExclamation}
                         className="faIconLeft"
                     />
-                    {showAuditErrorCode ? audit.errorCode : t(`audits:${audit.errorCode}`)}
+                    {showAuditErrorCode ? audit.errorCode : t(`audits:${audit.errorCode}`, params)}
                     {/* •&nbsp; // TODO: add ignore audit implementation in backend
                     <a href="#" onClick={(e) => {
                         e.preventDefault();

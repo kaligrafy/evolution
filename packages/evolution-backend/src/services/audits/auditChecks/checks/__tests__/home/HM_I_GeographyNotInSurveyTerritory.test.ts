@@ -78,7 +78,6 @@ describe('HM_I_geographyNotInSurveyTerritory audit check', () => {
             errorCode: 'HM_I_geographyNotInSurveyTerritory',
             version: 1,
             level: 'error',
-            message: 'Home geography is outside of the survey territory',
             ignore: false
         });
     });

@@ -12,6 +12,7 @@ import _cloneDeep from 'lodash/cloneDeep';
 import Select from 'react-select';
 
 import { AuditStatsByLevelAndObjectType } from 'evolution-common/lib/services/audits/types';
+import { getAuditTranslationParams } from 'evolution-common/lib/services/audits/auditCheckTranslatableMessages';
 import { InterviewListAttributes } from 'evolution-common/lib/services/questionnaire/types';
 
 const auditLevels = ['error', 'warning', 'info'];
@@ -121,9 +122,10 @@ export const ValidationAuditFilter = ({
             const audits = auditsBySurveyObject[surveyObject] || [];
             for (let j = 0, countJ = audits.length; j < countJ; j++) {
                 const audit = audits[j];
+                const params = getAuditTranslationParams(audit.errorCode);
                 const choice = {
                     value: audit.errorCode,
-                    label: `• ${t([`audits:${audit.errorCode}`])} [${audit.count}]`
+                    label: `• ${t(`audits:${audit.errorCode}`, params)} [${audit.count}]`
                 };
                 if (filterValue && filterValue.includes(audit.errorCode)) {
                     selectedAuditChoicesByLevel[level].push(choice);

@@ -130,7 +130,6 @@ describe('HM_I_preGeographyAndHomeGeographyTooFarApartError audit check', () => 
                 errorCode: 'HM_I_preGeographyAndHomeGeographyTooFarApartError',
                 version: 1,
                 level: 'error',
-                message: 'Pre-filled and declared home geography are far apart',
                 ignore: false
             });
         });

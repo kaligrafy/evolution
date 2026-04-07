@@ -40,7 +40,6 @@ describe('runVisitedPlaceAuditChecks - Integration', () => {
                 errorCode: 'TEST_FAIL_1',
                 version: 1,
                 level: 'error',
-                message: 'Test failure 1',
                 ignore: false
             }),
             TEST_FAIL_2: () => ({
@@ -49,7 +48,6 @@ describe('runVisitedPlaceAuditChecks - Integration', () => {
                 errorCode: 'TEST_FAIL_2',
                 version: 1,
                 level: 'warning',
-                message: 'Test failure 2',
                 ignore: false
             })
         };
@@ -63,11 +61,9 @@ describe('runVisitedPlaceAuditChecks - Integration', () => {
         expect(audits.every((a) => a.objectType === 'visitedPlace' && a.objectUuid === validUuid)).toBe(true);
         const fail1 = audits.find((a) => a.errorCode === 'TEST_FAIL_1')!;
         expect(fail1.level).toBe('error');
-        expect(fail1.message).toBe('Test failure 1');
         expect(fail1.version).toBe(1);
         const fail2 = audits.find((a) => a.errorCode === 'TEST_FAIL_2')!;
         expect(fail2.level).toBe('warning');
-        expect(fail2.message).toBe('Test failure 2');
         expect(fail2.version).toBe(1);
     });
 
@@ -100,7 +96,6 @@ describe('runVisitedPlaceAuditChecks - Integration', () => {
                     errorCode: 'ASYNC_CHECK_FAIL',
                     version: 1,
                     level: 'error',
-                    message: 'Async check failure',
                     ignore: false
                 };
             },
@@ -110,7 +105,6 @@ describe('runVisitedPlaceAuditChecks - Integration', () => {
                 errorCode: 'SYNC_CHECK_FAIL',
                 version: 1,
                 level: 'warning',
-                message: 'Sync check failure',
                 ignore: false
             })
         };

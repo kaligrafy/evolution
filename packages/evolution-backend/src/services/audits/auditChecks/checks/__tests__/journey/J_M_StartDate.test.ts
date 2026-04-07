@@ -31,7 +31,6 @@ describe('J_M_StartDate audit check', () => {
             errorCode: 'J_M_StartDate',
             version: 1,
             level: 'error',
-            message: 'Journey start date is missing',
             ignore: false
         });
     });
@@ -47,7 +46,6 @@ describe('J_M_StartDate audit check', () => {
             errorCode: 'J_M_StartDate',
             version: 1,
             level: 'error',
-            message: 'Journey start date is missing',
             ignore: false
         });
     });

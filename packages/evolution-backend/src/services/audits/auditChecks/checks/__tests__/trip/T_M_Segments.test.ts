@@ -32,7 +32,6 @@ describe('T_M_Segments audit check', () => {
             errorCode: 'T_M_Segments',
             version: 1,
             level: 'error',
-            message: 'Trip segments are missing',
             ignore: false
         });
     });
@@ -48,7 +47,6 @@ describe('T_M_Segments audit check', () => {
             errorCode: 'T_M_Segments',
             version: 1,
             level: 'error',
-            message: 'Trip segments are missing',
             ignore: false
         });
     });

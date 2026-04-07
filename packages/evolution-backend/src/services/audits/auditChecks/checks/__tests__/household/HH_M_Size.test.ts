@@ -32,7 +32,6 @@ describe('HH_M_Size audit check', () => {
             errorCode: 'HH_M_Size',
             version: 1,
             level: 'error',
-            message: 'Household size is missing',
             ignore: false
         });
     });

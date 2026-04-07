@@ -133,7 +133,6 @@ describe('HM_I_preGeographyAndHomeGeographyTooFarApartWarning audit check', () =
                 objectUuid: validUuid,
                 errorCode: 'HM_I_preGeographyAndHomeGeographyTooFarApartWarning',
                 level: 'warning',
-                message: 'Pre-filled and declared home geography are a bit far apart',
                 ignore: false
             });
         });

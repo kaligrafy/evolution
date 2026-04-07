@@ -29,7 +29,6 @@ export const interviewAuditChecks: { [errorCode: string]: InterviewAuditCheckFun
                 errorCode: 'I_M_Languages',
                 version: 1,
                 level: 'error',
-                message: 'Interview languages are missing',
                 ignore: false
             };
         }
@@ -54,7 +53,6 @@ export const interviewAuditChecks: { [errorCode: string]: InterviewAuditCheckFun
                 errorCode: 'I_M_StartedAt',
                 version: 1,
                 level: 'error',
-                message: 'Interview start time is missing',
                 ignore: false
             };
         }
@@ -88,7 +86,6 @@ export const interviewAuditChecks: { [errorCode: string]: InterviewAuditCheckFun
                 errorCode: 'I_I_StartedAtBeforeSurveyStartDate',
                 version: 1,
                 level: 'error',
-                message: 'Interview start time is before survey start date',
                 ignore: false
             };
         }
@@ -122,7 +119,6 @@ export const interviewAuditChecks: { [errorCode: string]: InterviewAuditCheckFun
                 errorCode: 'I_I_StartedAtAfterSurveyEndDate',
                 version: 1,
                 level: 'error',
-                message: 'Interview start time is after survey end date',
                 ignore: false
             };
         }
@@ -144,7 +140,6 @@ export const interviewAuditChecks: { [errorCode: string]: InterviewAuditCheckFun
                 errorCode: 'I_M_AccessCode',
                 version: 1,
                 level: 'error',
-                message: 'Access code is missing',
                 ignore: false
             };
         }
@@ -175,7 +170,6 @@ export const interviewAuditChecks: { [errorCode: string]: InterviewAuditCheckFun
                     errorCode: 'I_I_InvalidAccessCodeFormat',
                     version: 1,
                     level: 'error',
-                    message: 'Access code format is invalid',
                     ignore: false
                 };
             }
@@ -198,7 +192,6 @@ export const interviewAuditChecks: { [errorCode: string]: InterviewAuditCheckFun
                 errorCode: 'I_I_ContactEmail',
                 version: 1,
                 level: 'error',
-                message: 'Contact email is invalid',
                 ignore: false
             };
         }
@@ -220,7 +213,6 @@ export const interviewAuditChecks: { [errorCode: string]: InterviewAuditCheckFun
                 errorCode: 'I_I_HelpContactEmail',
                 version: 1,
                 level: 'error',
-                message: 'Help contact email is invalid',
                 ignore: false
             };
         }

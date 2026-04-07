@@ -32,7 +32,6 @@ describe('HH_M_Home audit check', () => {
             errorCode: 'HH_M_Home',
             version: 1,
             level: 'error',
-            message: 'Home is missing',
             ignore: false
         });
     });

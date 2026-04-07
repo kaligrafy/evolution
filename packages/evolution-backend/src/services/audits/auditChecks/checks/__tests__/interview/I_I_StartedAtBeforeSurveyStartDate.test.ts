@@ -147,7 +147,6 @@ describe('I_I_StartedAtBeforeSurveyStartDate audit check', () => {
                     errorCode: 'I_I_StartedAtBeforeSurveyStartDate',
                     version: 1,
                     level: 'error',
-                    message: 'Interview start time is before survey start date',
                     ignore: false
                 });
             });

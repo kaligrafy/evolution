@@ -25,7 +25,6 @@ export const householdAuditChecks: { [errorCode: string]: HouseholdAuditCheckFun
                 errorCode: 'HH_M_Size',
                 version: 1,
                 level: 'error',
-                message: 'Household size is missing',
                 ignore: false
             };
         }
@@ -53,7 +52,6 @@ export const householdAuditChecks: { [errorCode: string]: HouseholdAuditCheckFun
                 errorCode: 'HH_I_Size',
                 version: 1,
                 level: 'error',
-                message: 'Household size is out of range (should be an integer between 1 and 18)',
                 ignore: false
             };
         }
@@ -76,7 +74,6 @@ export const householdAuditChecks: { [errorCode: string]: HouseholdAuditCheckFun
                 errorCode: 'HH_M_Home',
                 version: 1,
                 level: 'error',
-                message: 'Home is missing',
                 ignore: false
             };
         }
@@ -102,7 +99,6 @@ export const householdAuditChecks: { [errorCode: string]: HouseholdAuditCheckFun
                 errorCode: 'HH_L_SizeMembersCountMismatch',
                 version: 1,
                 level: 'error',
-                message: 'Size and members count mismatch',
                 ignore: false
             };
         }
@@ -126,7 +122,6 @@ export const householdAuditChecks: { [errorCode: string]: HouseholdAuditCheckFun
                 errorCode: 'HH_M_CarNumber',
                 version: 1,
                 level: 'error',
-                message: 'Car number is missing',
                 ignore: false
             };
         }
@@ -155,7 +150,6 @@ export const householdAuditChecks: { [errorCode: string]: HouseholdAuditCheckFun
                 errorCode: 'HH_I_CarNumber',
                 version: 1,
                 level: 'error',
-                message: 'Car number is out of range (should be an integer between 0 and 13)',
                 ignore: false
             };
         }
@@ -181,7 +175,6 @@ export const householdAuditChecks: { [errorCode: string]: HouseholdAuditCheckFun
                 errorCode: 'HH_L_CarNumberVehiclesCountMismatch',
                 version: 1,
                 level: 'error',
-                message: 'Car number and vehicles count mismatch',
                 ignore: false
             };
         }

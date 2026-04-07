@@ -112,7 +112,6 @@ describe('I_M_StartedAt audit check', () => {
                 errorCode: 'I_M_StartedAt',
                 version: 1,
                 level: 'error',
-                message: 'Interview start time is missing',
                 ignore: false
             });
         });

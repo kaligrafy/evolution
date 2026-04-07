@@ -25,7 +25,6 @@ export const journeyAuditChecks: { [errorCode: string]: JourneyAuditCheckFunctio
                 errorCode: 'J_M_StartDate',
                 version: 1,
                 level: 'error',
-                message: 'Journey start date is missing',
                 ignore: false
             };
         }

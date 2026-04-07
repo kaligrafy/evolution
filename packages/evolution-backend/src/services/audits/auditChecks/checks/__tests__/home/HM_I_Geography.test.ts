@@ -40,7 +40,6 @@ describe('HM_I_Geography audit check', () => {
             errorCode: 'HM_I_Geography',
             version: 1,
             level: 'error',
-            message: 'Home geography is invalid',
             ignore: false
         });
     });
@@ -65,7 +64,6 @@ describe('HM_I_Geography audit check', () => {
             errorCode: 'HM_I_Geography',
             version: 1,
             level: 'error',
-            message: 'Home geography is invalid',
             ignore: false
         });
     });

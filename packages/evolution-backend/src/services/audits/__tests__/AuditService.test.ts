@@ -76,7 +76,6 @@ describe('AuditService', () => {
                 errorCode: 'TEST_AUDIT',
                 version: 1,
                 level: 'warning',
-                message: 'Test audit',
                 ignore: false
             }
         ]);

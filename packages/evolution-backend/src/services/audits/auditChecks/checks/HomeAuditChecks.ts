@@ -40,7 +40,6 @@ export const homeAuditChecks: { [errorCode: string]: HomeAuditCheckFunction } = 
                 errorCode: 'HM_M_Geography',
                 version: 1,
                 level: 'error',
-                message: 'Home geography is missing',
                 ignore: false
             };
         }
@@ -64,7 +63,6 @@ export const homeAuditChecks: { [errorCode: string]: HomeAuditCheckFunction } = 
                 errorCode: 'HM_I_Geography',
                 version: 1,
                 level: 'error',
-                message: 'Home geography is invalid',
                 ignore: false
             };
         }
@@ -94,7 +92,6 @@ export const homeAuditChecks: { [errorCode: string]: HomeAuditCheckFunction } = 
                     errorCode: 'HM_I_preGeographyAndHomeGeographyTooFarApartError',
                     version: 1,
                     level: 'error',
-                    message: 'Pre-filled and declared home geography are far apart',
                     ignore: false
                 };
             }
@@ -127,7 +124,6 @@ export const homeAuditChecks: { [errorCode: string]: HomeAuditCheckFunction } = 
                     errorCode: 'HM_I_preGeographyAndHomeGeographyTooFarApartWarning',
                     version: 1,
                     level: 'warning',
-                    message: 'Pre-filled and declared home geography are a bit far apart',
                     ignore: false
                 };
             }
@@ -153,7 +149,6 @@ export const homeAuditChecks: { [errorCode: string]: HomeAuditCheckFunction } = 
                     errorCode: 'HM_I_geographyNotInSurveyTerritory',
                     version: 1, // Start with version 1 for the new infrastructure
                     level: 'error',
-                    message: 'Home geography is outside of the survey territory',
                     ignore: false
                 };
             }

@@ -54,7 +54,6 @@ describe('HH_L_CarNumberVehiclesCountMismatch audit check', () => {
                 errorCode: 'HH_L_CarNumberVehiclesCountMismatch',
                 version: 1,
                 level: 'error',
-                message: 'Car number and vehicles count mismatch',
                 ignore: false
             });
         }

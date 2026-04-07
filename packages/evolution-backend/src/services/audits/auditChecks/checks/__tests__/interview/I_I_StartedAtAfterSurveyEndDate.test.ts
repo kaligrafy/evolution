@@ -153,7 +153,6 @@ describe('I_I_StartedAtAfterSurveyEndDate audit check', () => {
                     errorCode: 'I_I_StartedAtAfterSurveyEndDate',
                     version: 1,
                     level: 'error',
-                    message: 'Interview start time is after survey end date',
                     ignore: false
                 });
             });

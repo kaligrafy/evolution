@@ -27,7 +27,6 @@ export const visitedPlaceAuditChecks: { [errorCode: string]: VisitedPlaceAuditCh
                 errorCode: 'VP_M_Geography',
                 version: 1,
                 level: 'error',
-                message: 'Visited place geography is missing',
                 ignore: false
             };
         }
@@ -51,7 +50,6 @@ export const visitedPlaceAuditChecks: { [errorCode: string]: VisitedPlaceAuditCh
                 errorCode: 'VP_I_Geography',
                 version: 1,
                 level: 'error',
-                message: 'Visited place geography is invalid',
                 ignore: false
             };
         }

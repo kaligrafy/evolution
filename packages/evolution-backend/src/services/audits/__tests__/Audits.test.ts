@@ -108,7 +108,6 @@ describe('createSurveyObjectsAndSaveAuditsToDb', () => {
             errorCode: 'TEST_ERROR_1',
             version: 1,
             level: 'error',
-            message: 'Test error 1',
             ignore: false
         },
         {
@@ -117,7 +116,6 @@ describe('createSurveyObjectsAndSaveAuditsToDb', () => {
             errorCode: 'TEST_ERROR_2',
             version: 1,
             level: 'warning',
-            message: 'Test warning 2',
             ignore: false
         }
     ];

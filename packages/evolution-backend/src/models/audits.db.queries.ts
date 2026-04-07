@@ -12,7 +12,6 @@ import { AuditForObject } from 'evolution-common/lib/services/audits/types';
 import { Knex } from 'knex';
 import * as AuditUtils from 'evolution-common/lib/services/audits/AuditUtils';
 import { mergeWithExisting } from '../services/audits/AuditUtils';
-
 const tableName = 'sv_audits';
 
 type DbObject = {
@@ -21,7 +20,6 @@ type DbObject = {
     object_type: string;
     object_uuid: string;
     ignore?: boolean;
-    message: string | null;
     version: number;
     level?: 'error' | 'warning' | 'info'; // empty = error
 };
@@ -32,7 +30,6 @@ const dbObjectToAudit = (dbObject: DbObject): AuditForObject => ({
     version: dbObject.version,
     level: dbObject.level,
     errorCode: dbObject.error_code,
-    message: dbObject.message === null ? undefined : dbObject.message,
     ignore: dbObject.ignore
 });
 
@@ -43,7 +40,6 @@ const auditToDbObject = (interviewId: number, audit: AuditForObject): DbObject =
     version: audit.version,
     level: audit.level,
     error_code: audit.errorCode,
-    message: audit.message || null,
     ignore: audit.ignore
 });
 

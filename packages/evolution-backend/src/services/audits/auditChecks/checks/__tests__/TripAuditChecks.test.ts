@@ -42,7 +42,6 @@ describe('runTripAuditChecks - Integration', () => {
                 errorCode: 'TEST_FAIL_1',
                 version: 1,
                 level: 'error',
-                message: 'Test failure 1',
                 ignore: false
             }),
             TEST_FAIL_2: (): AuditForObject => ({
@@ -51,7 +50,6 @@ describe('runTripAuditChecks - Integration', () => {
                 errorCode: 'TEST_FAIL_2',
                 version: 1,
                 level: 'warning',
-                message: 'Test failure 2',
                 ignore: false
             })
         };
@@ -86,7 +84,6 @@ describe('runTripAuditChecks - Integration', () => {
                     errorCode: 'ASYNC_CHECK_1',
                     version: 1,
                     level: 'error',
-                    message: 'Async failure 1',
                     ignore: false
                 });
             },
@@ -97,7 +94,6 @@ describe('runTripAuditChecks - Integration', () => {
                     errorCode: 'ASYNC_CHECK_2',
                     version: 1,
                     level: 'warning',
-                    message: 'Async failure 2',
                     ignore: false
                 });
             },
@@ -122,7 +118,6 @@ describe('runTripAuditChecks - Integration', () => {
                 errorCode: 'PASSING_CHECK',
                 version: 1,
                 level: 'error',
-                message: 'This should succeed',
                 ignore: false
             }),
             THROWING_CHECK: () => {
@@ -144,7 +139,6 @@ describe('runTripAuditChecks - Integration', () => {
                 errorCode: 'PASSING_CHECK',
                 version: 1,
                 level: 'error',
-                message: 'This should succeed',
                 ignore: false
             }),
             REJECTING_CHECK: async () => {
@@ -167,7 +161,6 @@ describe('runTripAuditChecks - Integration', () => {
                 errorCode: 'SYNC_FAIL',
                 version: 1,
                 level: 'error',
-                message: 'Sync failure',
                 ignore: false
             }),
             ASYNC_PASS: async () => Promise.resolve(undefined),
@@ -178,7 +171,6 @@ describe('runTripAuditChecks - Integration', () => {
                     errorCode: 'ASYNC_FAIL',
                     version: 1,
                     level: 'warning',
-                    message: 'Async failure',
                     ignore: false
                 });
             },

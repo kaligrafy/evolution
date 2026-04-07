@@ -19,8 +19,8 @@ describe('auditObject', () => {
     const validations = {
         'error-code-ok': (_value: ArbitraryObject) => undefined,
         'error-code-with-minimal-info': (_value: ArbitraryObject) => ({ version: 2 }),
-        'error-code-with-more-info': (_value: ArbitraryObject) => ({ version: 3, level: 'warning' as const, message: 'SomeMessageKey' }),
-        'error-code-without-version': (_value: ArbitraryObject) => ({ message: 'OtherMessageKey' })
+        'error-code-with-more-info': (_value: ArbitraryObject) => ({ version: 3, level: 'warning' as const }),
+        'error-code-without-version': (_value: ArbitraryObject) => ({})
     };
 
     it('should audit object and return audits', async () => {
@@ -36,14 +36,12 @@ describe('auditObject', () => {
             errorCode: 'error-code-with-more-info',
             objectUuid: arbitraryUuid,
             objectType: 'test',
-            message: 'SomeMessageKey',
             version: 3,
             level: 'warning'
         }, {
             errorCode: 'error-code-without-version',
             objectUuid: arbitraryUuid,
             objectType: 'test',
-            message: 'OtherMessageKey',
             version: 1
         }]);
     });

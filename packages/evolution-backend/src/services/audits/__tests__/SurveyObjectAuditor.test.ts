@@ -35,7 +35,6 @@ jest.mock('../auditChecks', () => {
                 objectUuid: 'interview-uuid',
                 errorCode: 'I_L_InterviewAudited',
                 level: 'info',
-                message: 'Interview audited',
                 version: 1,
                 ignore: false
             }
@@ -46,7 +45,6 @@ jest.mock('../auditChecks', () => {
                 objectUuid: 'household-uuid',
                 errorCode: 'HH_I_Size',
                 level: 'error',
-                message: 'Invalid household size',
                 version: 1,
                 ignore: false
             }
@@ -57,7 +55,6 @@ jest.mock('../auditChecks', () => {
                 objectUuid: 'home-uuid',
                 errorCode: 'HM_I_Address',
                 level: 'warning',
-                message: 'Invalid home address',
                 version: 1,
                 ignore: false
             }
@@ -70,7 +67,6 @@ jest.mock('../auditChecks', () => {
                 objectUuid: 'visitedplace-uuid',
                 errorCode: 'VP_M_Geography',
                 level: 'warning',
-                message: 'Missing geography',
                 version: 1,
                 ignore: false
             }
@@ -166,7 +162,6 @@ describe('SurveyObjectAuditor', () => {
                 objectUuid: 'interview-uuid',
                 errorCode: 'I_L_InterviewAudited',
                 level: 'info',
-                message: 'Interview audited',
                 version: 1,
                 ignore: false
             });
@@ -191,7 +186,6 @@ describe('SurveyObjectAuditor', () => {
                 objectUuid: 'household-uuid',
                 errorCode: 'HH_I_Size',
                 level: 'error',
-                message: 'Invalid household size',
                 version: 1,
                 ignore: false
             });
@@ -216,7 +210,6 @@ describe('SurveyObjectAuditor', () => {
                 objectUuid: 'home-uuid',
                 errorCode: 'HM_I_Address',
                 level: 'warning',
-                message: 'Invalid home address',
                 version: 1,
                 ignore: false
             });
@@ -244,7 +237,6 @@ describe('SurveyObjectAuditor', () => {
                 objectUuid: 'visitedplace-uuid',
                 errorCode: 'VP_M_Geography',
                 level: 'warning',
-                message: 'Missing geography',
                 version: 1,
                 ignore: false
             });

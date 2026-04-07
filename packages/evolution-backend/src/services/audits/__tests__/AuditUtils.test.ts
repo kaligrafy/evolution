@@ -22,7 +22,6 @@ describe('convertParamsErrorsToAudits', () => {
             errorCode: slugify('Error message 1'),
             objectUuid: arbitraryUuid,
             objectType: 'interview',
-            message: errors[0].message,
             version: 1,
             ignore: false,
             level: 'error'
@@ -31,7 +30,6 @@ describe('convertParamsErrorsToAudits', () => {
             errorCode: slugify('Error message 2'),
             objectUuid: arbitraryUuid,
             objectType: 'interview',
-            message: errors[1].message,
             version: 1,
             ignore: false,
             level: 'error'
@@ -45,21 +43,18 @@ describe('mergeWithExisting', () => {
             'test-error': {
                 version: 1,
                 errorCode: 'test-error',
-                message: 'Test error message',
                 level: 'error',
                 ignore: true,
             },
             'outdated-error': {
                 version: 1,
                 errorCode: 'oudated-error',
-                message: 'Outdated error message',
                 level: 'error',
                 ignore: true,
             },
             'version-changed-error': {
                 version: 1,
                 errorCode: 'oudated-error',
-                message: 'Outdated error message',
                 level: 'error',
                 ignore: true,
             },
@@ -69,14 +64,12 @@ describe('mergeWithExisting', () => {
             'test-error': {
                 version: 1,
                 errorCode: 'test-error',
-                message: 'Test error message updated',
                 level: 'warning',
                 ignore: false,
             },
             'version-changed-error': {
                 version: 2,
                 errorCode: 'oudated-error',
-                message: 'Outdated error message',
                 level: 'error',
                 ignore: false,
             },

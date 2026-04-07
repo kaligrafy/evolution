@@ -56,7 +56,6 @@ describe('HH_L_SizeMembersCountMismatch audit check', () => {
                 errorCode: 'HH_L_SizeMembersCountMismatch',
                 version: 1,
                 level: 'error',
-                message: 'Size and members count mismatch',
                 ignore: false
             });
         }

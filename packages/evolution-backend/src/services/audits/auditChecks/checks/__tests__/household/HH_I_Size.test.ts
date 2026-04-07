@@ -32,7 +32,6 @@ describe('HH_I_Size audit check', () => {
             errorCode: 'HH_I_Size',
             version: 1,
             level: 'error',
-            message: 'Household size is out of range (should be an integer between 1 and 18)',
             ignore: false
         });
     });
@@ -48,7 +47,6 @@ describe('HH_I_Size audit check', () => {
             errorCode: 'HH_I_Size',
             version: 1,
             level: 'error',
-            message: 'Household size is out of range (should be an integer between 1 and 18)',
             ignore: false
         });
     });
@@ -64,7 +62,6 @@ describe('HH_I_Size audit check', () => {
             errorCode: 'HH_I_Size',
             version: 1,
             level: 'error',
-            message: 'Household size is out of range (should be an integer between 1 and 18)',
             ignore: false
         });
     });
@@ -90,7 +87,6 @@ describe('HH_I_Size audit check', () => {
             errorCode: 'HH_I_Size',
             version: 1,
             level: 'error',
-            message: 'Household size is out of range (should be an integer between 1 and 18)',
             ignore: false
         });
     });

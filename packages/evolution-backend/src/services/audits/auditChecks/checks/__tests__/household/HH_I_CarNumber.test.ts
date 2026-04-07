@@ -32,7 +32,6 @@ describe('HH_I_CarNumber audit check', () => {
             errorCode: 'HH_I_CarNumber',
             version: 1,
             level: 'error',
-            message: 'Car number is out of range (should be an integer between 0 and 13)',
             ignore: false
         });
     });

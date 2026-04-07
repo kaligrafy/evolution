@@ -83,8 +83,7 @@ describe('InterviewAudited', () => {
             const initialAudits: Audit[] = [{
                 version: 1,
                 level: 'error',
-                errorCode: 'TEST_ERROR',
-                message: 'Test error message'
+                errorCode: 'TEST_ERROR'
             }];
 
             const auditedWithInitialValues = new InterviewAudited({

@@ -46,7 +46,6 @@ describe('I_M_Languages audit check', () => {
             errorCode: 'I_M_Languages',
             version: 1,
             level: 'error',
-            message: 'Interview languages are missing',
             ignore: false
         });
     });
@@ -64,7 +63,6 @@ describe('I_M_Languages audit check', () => {
             errorCode: 'I_M_Languages',
             version: 1,
             level: 'error',
-            message: 'Interview languages are missing',
             ignore: false
         });
     });
@@ -82,7 +80,6 @@ describe('I_M_Languages audit check', () => {
             errorCode: 'I_M_Languages',
             version: 1,
             level: 'error',
-            message: 'Interview languages are missing',
             ignore: false
         });
     });

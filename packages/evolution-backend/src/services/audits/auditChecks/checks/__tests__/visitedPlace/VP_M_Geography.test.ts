@@ -31,7 +31,6 @@ describe('VP_M_Geography audit check', () => {
             errorCode: 'VP_M_Geography',
             version: 1,
             level: 'error',
-            message: 'Visited place geography is missing',
             ignore: false
         });
     });

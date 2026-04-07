@@ -113,7 +113,6 @@ describe('I_M_AccessCode audit check', () => {
                     errorCode: 'I_M_AccessCode',
                     version: 1,
                     level: 'error',
-                    message: 'Access code is missing',
                     ignore: false
                 });
             });

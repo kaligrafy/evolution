@@ -15,7 +15,6 @@ export const auditArrayToAudits = (auditsArr: AuditForObject[]): { [objectKey: s
         objectAudits[audit.errorCode] = {
             version: audit.version,
             errorCode: audit.errorCode,
-            message: audit.message,
             level: audit.level,
             ignore: audit.ignore
         };

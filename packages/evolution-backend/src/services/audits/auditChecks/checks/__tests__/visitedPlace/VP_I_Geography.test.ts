@@ -40,7 +40,6 @@ describe('VP_I_Geography audit check', () => {
             errorCode: 'VP_I_Geography',
             version: 1,
             level: 'error',
-            message: 'Visited place geography is invalid',
             ignore: false
         });
     });
@@ -65,7 +64,6 @@ describe('VP_I_Geography audit check', () => {
             errorCode: 'VP_I_Geography',
             version: 1,
             level: 'error',
-            message: 'Visited place geography is invalid',
             ignore: false
         });
     });

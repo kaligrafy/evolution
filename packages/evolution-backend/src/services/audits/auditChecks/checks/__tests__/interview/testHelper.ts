@@ -34,7 +34,6 @@ export const runEmailAuditCheckTests = (config: {
     checkFn: InterviewAuditCheckFunction;
     checkName: string;
     emailField: keyof Interview;
-    errorMessage: string;
 }) => {
     const validUuid = uuidV4();
 
@@ -73,7 +72,6 @@ export const runEmailAuditCheckTests = (config: {
                 errorCode: config.checkName,
                 version: 1,
                 level: 'error',
-                message: config.errorMessage,
                 ignore: false
             });
         });

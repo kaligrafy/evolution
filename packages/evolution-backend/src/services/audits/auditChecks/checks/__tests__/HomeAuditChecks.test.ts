@@ -41,7 +41,6 @@ describe('runHomeAuditChecks - Integration', () => {
                 errorCode: 'TEST_FAIL_1',
                 version: 1,
                 level: 'error',
-                message: 'Test failure 1',
                 ignore: false
             }),
             TEST_FAIL_2: (): AuditForObject => ({
@@ -50,7 +49,6 @@ describe('runHomeAuditChecks - Integration', () => {
                 errorCode: 'TEST_FAIL_2',
                 version: 1,
                 level: 'warning',
-                message: 'Test failure 2',
                 ignore: false
             })
         };

@@ -17,13 +17,11 @@ export type Audit = {
      */
     level?: 'error' | 'warning' | 'info'; // empty = error
     /**
-     * The code of this validation. It should be unique per interview object.
+     * Stable identifier for this validation. Persisted as-is (DB, APIs). Must match a key in the
+     * `audits` i18n namespace (same string as `errorCode`). Optional interpolation params:
+     * `getAuditTranslationParams` in `auditCheckTranslatableMessages.ts` (admin UI).
      */
     errorCode: string;
-    /**
-     * A valid i18n key to translate this message. If not set, the errorCode will be used as the i18n key.
-     */
-    message?: string;
     /**
      * Whether to ignore this validation in the interface. Defaults to false
      */

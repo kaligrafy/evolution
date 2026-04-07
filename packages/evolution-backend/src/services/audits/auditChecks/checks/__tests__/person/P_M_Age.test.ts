@@ -31,7 +31,6 @@ describe('P_M_Age audit check', () => {
             errorCode: 'P_M_Age',
             version: 1,
             level: 'error',
-            message: 'Person age is missing',
             ignore: false
         });
     });
@@ -47,7 +46,6 @@ describe('P_M_Age audit check', () => {
             errorCode: 'P_M_Age',
             version: 1,
             level: 'error',
-            message: 'Person age is missing',
             ignore: false
         });
     });

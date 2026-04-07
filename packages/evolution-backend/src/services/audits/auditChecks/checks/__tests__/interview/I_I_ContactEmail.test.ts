@@ -12,7 +12,6 @@ describe('I_I_ContactEmail audit check', () => {
     runEmailAuditCheckTests({
         checkFn: interviewAuditChecks.I_I_ContactEmail,
         checkName: 'I_I_ContactEmail',
-        emailField: 'contactEmail',
-        errorMessage: 'Contact email is invalid'
+        emailField: 'contactEmail'
     });
 });

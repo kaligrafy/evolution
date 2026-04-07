@@ -25,7 +25,6 @@ export const tripAuditChecks: { [errorCode: string]: TripAuditCheckFunction } = 
                 errorCode: 'T_M_Segments',
                 version: 1,
                 level: 'error',
-                message: 'Trip segments are missing',
                 ignore: false
             };
         }

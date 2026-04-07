@@ -12,7 +12,6 @@ describe('I_I_HelpContactEmail audit check', () => {
     runEmailAuditCheckTests({
         checkFn: interviewAuditChecks.I_I_HelpContactEmail,
         checkName: 'I_I_HelpContactEmail',
-        emailField: 'helpContactEmail',
-        errorMessage: 'Help contact email is invalid'
+        emailField: 'helpContactEmail'
     });
 });

@@ -29,7 +29,6 @@ export const convertParamsErrorsToAudits = (
         audits.push({
             version: 1,
             errorCode,
-            message: error.message,
             level: 'error',
             ignore: false, // params errors should never be ignored
             ...objectData

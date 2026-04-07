@@ -37,7 +37,6 @@ describe('HH_M_CarNumber audit check', () => {
             errorCode: 'HH_M_CarNumber',
             version: 1,
             level: 'error',
-            message: 'Car number is missing',
             ignore: false
         });
     });

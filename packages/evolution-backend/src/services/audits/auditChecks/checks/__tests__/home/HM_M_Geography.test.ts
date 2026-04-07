@@ -31,7 +31,6 @@ describe('HM_M_Geography audit check', () => {
             errorCode: 'HM_M_Geography',
             version: 1,
             level: 'error',
-            message: 'Home geography is missing',
             ignore: false
         });
     });

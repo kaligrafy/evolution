@@ -25,7 +25,6 @@ export const segmentAuditChecks: { [errorCode: string]: SegmentAuditCheckFunctio
                 errorCode: 'S_M_Mode',
                 version: 1,
                 level: 'error',
-                message: 'Segment mode is missing',
                 ignore: false
             };
         }

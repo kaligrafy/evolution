@@ -58,7 +58,6 @@ describe('SurveyObjectsAndAuditsFactory', () => {
                     errorCode: 'TEST_AUDIT',
                     version: 1,
                     level: 'warning',
-                    message: 'Test audit',
                     ignore: false
                 }
             ],
@@ -81,7 +80,6 @@ describe('SurveyObjectsAndAuditsFactory', () => {
                 errorCode: 'TEST_AUDIT',
                 version: 1,
                 level: 'warning',
-                message: 'Test audit',
                 ignore: false
             }
         ]);
